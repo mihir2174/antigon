@@ -1,0 +1,139 @@
+/* Overall Container */
+.products-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Add Product Section */
+.add-product-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.add-product-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.add-product-form input,
+.add-product-form select {
+  padding: 10px;
+  font-size: 14px;
+  width: calc(33.333% - 20px);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-product-form input[type="file"] {
+  width: auto;
+}
+
+.add-product-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.update-btn {
+  background-color: #1E90FF;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #1C86EE;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #e53935;
+}
+
+/* Product List */
+.product-list-heading {
+  font-size: 18px;
+  color: #333;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons .btn {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.edit-btn {
+  background-color: #1E90FF;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #1C86EE;
+}

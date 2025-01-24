@@ -1,0 +1,43 @@
+/* Header.css */
+
+.upper {
+    background-color: #2084C2;
+    height: 50px;
+    color: white;
+    padding: 0 15px; /* Add some padding for better spacing */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.upper div {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .upper {
+        height: auto; /* Allow height to adjust */
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .upper div {
+        justify-content: center; /* Center items on smaller screens */
+        margin-bottom: 10px; /* Add some spacing between items */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .upper {
+        height: 60px; /* Slightly taller for tablets */
+    }
+
+    .upper div {
+        gap: 10px; /* Less gap for medium screens */
+    }
+}
+
+@media (min-width: 1025px) {
+    .upper {
+        height: 50px; /* Maintain original height for laptops and larger screens */
+    }
+}
